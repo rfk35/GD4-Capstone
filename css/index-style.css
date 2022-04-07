@@ -185,3 +185,12 @@
     }
   }
   
+  /* Help Section */
+
+.help {
+    padding-top: 50px;
+    background-color: #E6E6FA ;
+    text-align: center;
+    color: #191905;
+    padding-bottom: 50px;
+}
