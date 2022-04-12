@@ -76,8 +76,9 @@ a:active {
 
 /* 2 Columns */
 .columns_2 {
-  width: 660px;
+  width: 460px;
   float: left;
+  margin-right: 20px;
 }
 .columns_2:last-of-type {
   margin-right: 0;
