@@ -237,9 +237,26 @@
   margin-left: 50em;
 }
 
-.shape-header-1 {
-  color: #191905;
-  
+.icon-1 {
+  margin-top: .5em;
+}
+
+.filter-purple{
+  filter: invert(24%) sepia(18%) saturate(6342%) hue-rotate(251deg) brightness(85%) contrast(87%);
+  height: 89px;
+  width: 90px;
+}
+
+.shape-header {
+  color:#191905;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.shape-body {
+  color:#191905;
+  font-size: 15px;
+  margin-top: -10px;
 }
 
 
