@@ -7,7 +7,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 100;
 	margin: 0 0 20px 0; 
 	line-height: 1.2;
-	color: #4D5C74; 
 }
 
 h1 {
@@ -72,58 +71,4 @@ a:active {
 	text-decoration: none;
 }
 
-/* ------- [ Simple Grid ] ------- */
 
-/* 2 Columns */
-.columns_2 {
-  width: 660px;
-  float: left;
-}
-.columns_2:last-of-type {
-  margin-right: 0;
-}
-
-/* 3 Columns */
-.columns_3 {
-  width: 300px;
-  float: left;
-  margin-right: 20px;  
-}
-.columns_3:last-of-type {
-  margin-right: 0;
-}
-
-/* 4 Columns */
-.columns_4 {
-  width: 220px;
-  float: left;
-  margin-right: 20px;
-}
-.columns_4:last-of-type {
-  margin-right: 0;
-}
-
-/* 6 Columns */
-.columns_6 {
-  width: 140px;
-  float: left;
-  margin-right: 20px;
-}
-.columns_6:last-of-type {
-  margin-right: 0;
-}
-
-/* 12 Columns */
-.columns_6 {
-  width: 60px;
-  float: left;
-  margin-right: 20px;
-}
-.columns_12:last-of-type {
-  margin-right: 0;
-}
-
-/* Slideshow */
-h1 {
-	color: black;
-}
