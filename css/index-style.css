@@ -214,7 +214,7 @@
 }
 
 .help-text {
-  margin-left: 2em;
+  margin-left: 4.5em;
   margin-top: 1em;
 }
 
@@ -238,7 +238,8 @@
 }
 
 .icon-1 {
-  margin-top: .5em;
+  top: 1.3em;
+  position: relative;
 }
 
 .filter-purple{
@@ -251,6 +252,7 @@
   color:#191905;
   font-weight: 700;
   font-size: 22px;
+  margin-top: .7em;
 }
 
 .shape-body {
@@ -269,15 +271,51 @@
   margin-top: 1.5em;
 }
 
+.icon-2 {
+  top: 1.3em;
+  position: relative;
+}
 
+.shape-header-2 {
+  color:#191905;
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: .7em;
+}
 
+.shape-body-2 {
+  color:#191905;
+  font-size: 15px;
+  margin-top: -10px;
+}
 
+/* Articles section */
 
+.column-left-2 {
+  width: 50%;
+}
 
+.column-right-2 {
+  width: 50%;
+}
 
+.shape-3 {
+  width: 494px;
+  height: 776px;
+  border-radius: 21px;
+  background-color: #4D5C74;
+  margin-top: 3em;
+  margin-left: 50em;
+}
 
-
-
+.shape-4 {
+  width: 494px;
+  height: 776px;
+  border-radius: 21px;
+  background-color: #4D5C74;
+  margin-top: 3em;
+  margin-left: 50em;
+}
 
 
 
