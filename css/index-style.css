@@ -1,198 +1,204 @@
 /* header menu */
 
 :root {
-    --background: rgba(102, 54, 149);
-  }
-  
-  *, *::before, *::after {
-  box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 400;
-  }
-  
-  header {
-    background: var(--background);
-    padding: 13px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .header-list {
-    font-family: 'Jost', sans-serif;
-  }
-  
-  
-  
-  .logotype {
-    height: 75px;
-    margin-left: 10em;
-  }
-  
-  .logo {
-    margin: 0;
-  }
+  --background: rgba(102, 54, 149);
+}
 
-  /* animated nav*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 400;
+}
+
+header {
+  background: var(--background);
+  padding: 13px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-list {
+  font-family: 'Jost', sans-serif;
+}
+
+
+
+.logotype {
+  height: 75px;
+  margin-left: 10em;
+}
+
+.logo {
+  margin: 0;
+}
+
+/* animated nav*/
 
 .nav-toggle {
+  display: none;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+  /*display: none;*/
+  /*use this for the first half of demo. Comment out for tranform section*/
+
+  /*this section to animate navigation*/
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+  /*transition duration ease in or out delay*/
+}
+
+nav a:hover {
+  color: #F55536;
+}
+
+.nav-toggle:checked~nav {
+  /*display: block;*/
+  /*use this for the first half of demo. Comment out for tranform section*/
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked~nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-out 300ms;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
     display: none;
   }
-  
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+
+  .logo {
+    grid-column: 2 / 3;
+  }
+
   nav {
-    position: absolute;
-    text-align: left;
-    top: 100%;
-    left: 0;
-    background: var(--background);
-    width: 100%;
-    /*display: none;*/ /*use this for the first half of demo. Comment out for tranform section*/
-    
-    /*this section to animate navigation*/
-    transform: scale(1,0);
-    transform-origin: top;
-    transition: transform 400ms ease-out;
-  }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  nav li {
-    margin-bottom: 1em;
-    margin-left: 1em;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    opacity: 0;
-    transition: opacity 150ms ease-out; /*transition duration ease in or out delay*/
-  }
-  
-  nav a:hover {
-    color: #F55536;
-  }
-  
-  .nav-toggle:checked ~ nav {
-    /*display: block;*/ /*use this for the first half of demo. Comment out for tranform section*/
-    transform: scale(1,1);
-  }
-  
-  .nav-toggle:checked ~ nav a {
-    opacity: 1;
-    transition: opacity 250ms ease-out 300ms;
-  }
-  
-  .nav-toggle-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 1em;
-    height: 100%;
+    all: unset;
+    grid-column: 3 / 4;
+
     display: flex;
+    justify-content: flex-end;
     align-items: center;
   }
-  
-  .nav-toggle-label span,
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
-    display: block;
-    background: white;
-    height: 2px;
-    width: 2em;
-    border-radius: 2px;
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+
     position: relative;
+    /*put this in when you add the bar at top*/
   }
-  
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
-    content: "";
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: white;
     position: absolute;
+    top: -.5em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    /*transform-origin: left;*/
+    transition: transform ease-in-out 250ms;
   }
-  
-  .nav-toggle-label span::before {
-    bottom: 7px;
+
+  nav a:hover::before {
+    transform: scale(1, 1);
   }
-  
-  .nav-toggle-label span::after {
-    top: 7px;
-  }
-  
-  @media screen and (min-width: 800px) {
-    .nav-toggle-label {
-      display: none;
-    }
-    
-    header {
-      display: grid;
-      grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-    }
-    
-    .logo {
-      grid-column: 2 / 3;
-    }
-    
-    nav {
-      all: unset;
-      grid-column: 3 / 4;
-      
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
-    
-    nav ul {
-      display: flex;
-    }
-    
-    nav li {
-      margin-left: 3em;
-      margin-bottom: 0;
-    }
-    
-    nav a {
-      opacity: 1;
-      
-      position: relative; /*put this in when you add the bar at top*/
-    }
-    
-    nav a::before {
-      content: '';
-      display: block;
-      height: 5px;
-      background: white;
-      position: absolute;
-      top: -.5em;
-      left: 0;
-      right: 0;
-      transform: scale(0, 1);
-      /*transform-origin: left;*/
-      transition: transform ease-in-out 250ms;
-    }
-    
-    nav a:hover::before {
-      transform: scale(1, 1);
-    }
-  }
-  
-  /* Help Section */
+}
+
+/* Help Section */
 
 .help {
-    padding-top: 50px;
-    background-color: #E6E6FA ;
-    text-align: center;
-    color: #191905;
-    padding-bottom: 50px;
+  padding-top: 50px;
+  background-color: #E6E6FA;
+  text-align: center;
+  color: #191905;
+  padding-bottom: 50px;
 }
 
 .columns {
@@ -210,7 +216,7 @@
 .help-header {
   margin-right: 21em;
   font-weight: 600;
-  color: #4D5C74; 
+  color: #4D5C74;
 }
 
 .help-text {
@@ -242,21 +248,21 @@
   position: relative;
 }
 
-.filter-purple{
+.filter-purple {
   filter: invert(24%) sepia(18%) saturate(6342%) hue-rotate(251deg) brightness(85%) contrast(87%);
   height: 89px;
   width: 90px;
 }
 
 .shape-header {
-  color:#191905;
+  color: #191905;
   font-weight: 700;
   font-size: 22px;
   margin-top: .7em;
 }
 
 .shape-body {
-  color:#191905;
+  color: #191905;
   font-size: 15px;
   margin-top: -10px;
 }
@@ -277,14 +283,14 @@
 }
 
 .shape-header-2 {
-  color:#191905;
+  color: #191905;
   font-weight: 700;
   font-size: 22px;
   margin-top: .7em;
 }
 
 .shape-body-2 {
-  color:#191905;
+  color: #191905;
   font-size: 15px;
   margin-top: -10px;
 }
@@ -305,8 +311,35 @@
   border-radius: 21px;
   background-color: #4D5C74;
   margin-top: 3em;
-  margin-left: 50em;
+  margin-left: 45em;
 }
+
+.article-1-img {
+  width: 494px;
+  height: 303px;
+  border-radius: 21px 21px 0 0;
+  padding-bottom: 10px;
+}
+
+.article-1-header {
+  padding-top: .3em;
+  padding-left: 1.4em;
+  padding-right: .2em;
+  font-weight: 600;
+  color: #E9F7CD;
+  font-size: 33px;
+}
+
+.article-1-body {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: -1em;
+  color: #ffffff;
+  padding-top: .5em;
+  padding-left: 1.7em;
+  line-height: 1.5;
+}
+
 
 .shape-4 {
   width: 494px;
@@ -314,15 +347,23 @@
   border-radius: 21px;
   background-color: #4D5C74;
   margin-top: 3em;
-  margin-left: 50em;
+  margin-left: 45em;
 }
 
+.shape-5 {
+  width: 494px;
+  height: 776px;
+  border-radius: 21px;
+  background-color: #4D5C74;
+  margin-top: 3em;
+  margin-right: 50em;
+}
 
-
-
-
-
-
-
-
-
+.shape-6 {
+  width: 494px;
+  height: 776px;
+  border-radius: 21px;
+  background-color: #4D5C74;
+  margin-top: 3em;
+  margin-right: 50em;
+}
