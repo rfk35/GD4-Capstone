@@ -674,7 +674,7 @@ nav a:hover {
   width: 40%;
 }
 
-/* The footer is fixed to the bottom of the page */
+/* Footer section */
 
 
 
@@ -684,10 +684,9 @@ nav a:hover {
 
 
 .footer-distributed{
-	background-color:#5B77B4;
+	background-color:#4D5C74;
 	box-sizing: border-box;
 	text-align: left;
-	font: bold 16px sans-serif;
 	padding: 50px 50px 60px 50px;
 }
 
@@ -703,6 +702,7 @@ nav a:hover {
 .footer-distributed .footer-left{
 	width: 30%;
 }
+
 
 .footer-distributed h3{
 	color:  #ffffff;
@@ -722,21 +722,49 @@ nav a:hover {
 
 /* Footer list */
 
-.footer-list {
+.footer-list-left {
     color: #ffffff;
     list-style-type: none;
     padding-top: 15px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 30em;
+    text-align: left;
 }
 
-.footer-list-space {
+.footer-list-left-space {
     margin-bottom: 10px;
 }
 
-.footer-list-space2 {
+.footer-list-left-space2 {
     margin-bottom: 13px;
     font-size: 15px;
 }
+
+.footer-list-center {
+  color: #ffffff;
+    list-style-type: none;
+    padding-top: 15px;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 15em;
+    columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+
+}
+
+.footer-list-center-space {
+  margin-bottom: 10px;
+}
+
+.footer-list-center-space2 {
+  margin-bottom: 13px;
+}
+
+
 
 /* Footer Center */
 
