@@ -112,7 +112,7 @@ nav a:hover {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   display: block;
-  background: #DCF2B0;
+  background: white;
   height: 2px;
   width: 2em;
   border-radius: 2px;
@@ -176,7 +176,7 @@ nav a:hover {
     content: '';
     display: block;
     height: 5px;
-    background: #DCF2B0;
+    background: white;
     position: absolute;
     top: -.5em;
     left: 0;
@@ -589,7 +589,7 @@ nav a:hover {
 }
 .more-info-row {
   text-align: center;
-  padding-left: 600px;
+  padding-left: 550px;
 }
 
 .more-info-row-2 {
@@ -600,7 +600,7 @@ nav a:hover {
   
 .more-info-row-3 {
   text-align: center;
-  padding-right: 600px;
+  padding-right: 550px;
 }
   
 
@@ -614,6 +614,7 @@ nav a:hover {
   font-weight: 700;
   text-align: center;
   margin-top: 2em;
+  color: #4D5C74;
 }
 
 
@@ -753,7 +754,6 @@ nav a:hover {
     columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
-
 }
 
 .footer-list-center-space {
@@ -764,7 +764,9 @@ nav a:hover {
   margin-bottom: 13px;
 }
 
-
+.footer-list-space {
+  text-decoration: none;
+}
 
 /* Footer Center */
 

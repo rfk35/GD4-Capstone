@@ -46,17 +46,19 @@ h6 {
 a:link {
 	color: #ffffff;
 	outline: 0;
+	text-decoration: none;
 }
 a:visited {
-	color: #DCF2B0;
+	color: white;
 	text-decoration: none;
 	outline: 0;
 }
 a:hover {
-	color:#5ab3da;
+	color:#F55536;
 }
 a:active {
 	color: #56627A;
+	text-decoration: none;
 }
 .more {
 	font-size: 0.9em;
