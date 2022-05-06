@@ -45,17 +45,15 @@ h6 {
 /* -------- [ Site Links ] -------- */
 a:link {
 	color: #ffffff;
-	text-decoration: underline;
 	outline: 0;
 }
 a:visited {
-	color: #000000;
+	color: #DCF2B0;
 	text-decoration: none;
 	outline: 0;
 }
 a:hover {
 	color:#5ab3da;
-	text-decoration: underline;
 }
 a:active {
 	color: #56627A;

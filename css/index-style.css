@@ -112,7 +112,7 @@ nav a:hover {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   display: block;
-  background: white;
+  background: #DCF2B0;
   height: 2px;
   width: 2em;
   border-radius: 2px;
@@ -176,7 +176,7 @@ nav a:hover {
     content: '';
     display: block;
     height: 5px;
-    background: white;
+    background: #DCF2B0;
     position: absolute;
     top: -.5em;
     left: 0;
@@ -841,16 +841,15 @@ nav a:hover {
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color: #455f97;
+	background-color: #663695;
 	border-radius: 2px;
-
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
     line-height: 35px;
     position: relative;
 
-	margin-right: 3px;
+	margin-right: 4px;
 	margin-bottom: 5px;
 }
 
